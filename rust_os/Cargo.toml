@@ -4,3 +4,11 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
+
+# set strategy to abort for dev profile
+[profile.dev]
+panic = "abort"
+
+# set strategy to abort for release profile
+[profile.release]
+panic = "abort"
