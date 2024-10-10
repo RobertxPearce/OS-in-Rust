@@ -2,13 +2,12 @@
 name = "rust_os"
 version = "0.1.0"
 edition = "2018"
-
-[dependencies]
+authors = ["Robert Pearce | robertbdpearce@gmail.com"]
 
 # set strategy to abort for dev profile
 [profile.dev]
-panic = "abort"
+panic = "abort" # disable stack unwinding on panic
 
 # set strategy to abort for release profile
 [profile.release]
-panic = "abort"
+panic = "abort" # disable stack unwinding on panic
